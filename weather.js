@@ -6,5 +6,6 @@ Weather.prototype.getData = async function (city, country) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${this.apiKey}`;
   const response = await fetch(url);
   const data = response.json();
+  console.log(data);
   return data
 } 

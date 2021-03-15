@@ -1,0 +1,28 @@
+localStorage es una propiedad del window object
+- Se usa para guardar datos en el navegador
+- Esta propiedad me permite acceder al objeto local storage
+- Estos datos almacenados no tienen fecha de expiracion
+- La clave y el valor para almacenar datos son siempre strings
+
+
+# ACCEDER Y AÑADIR UN ITEM 
+
+[javascript]
+  document.getElementById('ward').addEventListener('click', e => {
+    localStorage.setItem('user', 'ward');
+  });
+[end]
+# LEER ITEM ALMACENADO
+[javascript]
+localStorage.getItem('user');
+[end]
+
+# ELIMINAR item
+[javascript]
+localStorage.removeItem('user');
+[end]
+
+# ELIMINAR TODOS LOS ITEMS
+[javascript]
+localStorage.clear();
+[end]
